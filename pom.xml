@@ -44,10 +44,10 @@
     </issueManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:ops4j/org.ops4j.pax.web.git</connection>
-        <developerConnection>scm:git:git@github.com:ops4j/org.ops4j.pax.logging.git</developerConnection>
-        <url>https://github.com/ops4j/org.ops4j.pax.logging/tree/master</url>
-        <tag>logging-1.11.2</tag>
+        <connection>scm:git:http://github.com/Talend/org.ops4j.pax.logging.git</connection>
+        <developerConnection>scm:git:https://github.com/Talend/org.ops4j.pax.logging.git</developerConnection>
+        <url>https://github.com/Talend/org.ops4j.pax.logging</url>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
@@ -203,6 +203,8 @@
     </developers>
 
     <properties>
+        <upstream.version>1.11.2</upstream.version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -563,66 +565,66 @@
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-api-java9</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-api</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-service</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-logback</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-log4j2</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-sample-fragment</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-sample-fragment-logback</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-sample-fragment-log4j2</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging</groupId>
                 <artifactId>pax-logging-sample-fragment-log4j2-h2</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging.karaf</groupId>
                 <artifactId>karaf-base</artifactId>
                 <type>kar</type>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.ops4j.pax.logging.karaf</groupId>
                 <artifactId>karaf-distribution</artifactId>
                 <type>zip</type>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.ops4j.pax.logging.karaf</groupId>
                 <artifactId>karaf-base-logger</artifactId>
-                <version>${project.version}</version>
+                <version>${upstream.version}</version>
             </dependency>
 
             <!-- OPS4J dependencies -->
@@ -986,7 +988,7 @@
     </repositories>
 
     <modules>
-        <module>pax-logging-api-java9</module>
+        <!-- module>pax-logging-api-java9</module -->
         <module>pax-logging-api</module>
         <module>pax-logging-api-test</module>
         <module>pax-logging-service</module>

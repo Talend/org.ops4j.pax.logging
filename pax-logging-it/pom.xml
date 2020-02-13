@@ -57,7 +57,7 @@
                         <!-- to configure pax-exam with pax.exam.system=default which gives us more control over installed bundles -->
                         <pax.exam.configuration>file:./src/test/resources/controlled-exam.properties</pax.exam.configuration>
                         <version.org.slf4j>${version.org.slf4j}</version.org.slf4j>
-                        <version.pax-logging>${project.version}</version.pax-logging>
+                        <version.pax-logging>${upstream.version}</version.pax-logging>
                     </systemPropertyVariables>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                     <runOrder>alphabetical</runOrder>
