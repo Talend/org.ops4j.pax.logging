@@ -204,6 +204,7 @@
 
     <properties>
         <upstream.version>1.11.2</upstream.version>
+        <pax-logging-log4j2.tesb.version>1.11.2.tesb1</pax-logging-log4j2.tesb.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
