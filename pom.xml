@@ -52,6 +52,14 @@
 
     <distributionManagement>
         <!-- empty to override configuration from ancestors -->
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>file://${user.home}/.m2/repository</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>file://${user.home}/.m2/repository</url>
+        </repository>
     </distributionManagement>
 
     <developers>
@@ -285,6 +293,13 @@
     </properties>
 
     <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-file</artifactId>
+                <version>3.3.4</version>
+            </extension>
+        </extensions>
         <pluginManagement>
             <plugins>
                 <plugin>
