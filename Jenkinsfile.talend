@@ -77,7 +77,7 @@ pipeline {
                     script {
                         configFileProvider([configFile(fileId: 'maven-settings-nexus-zl', variable: 'MAVEN_SETTINGS')]) {
                             sh """
-                            mvn deploy -s ${MAVEN_SETTINGS} -B -pl ${MVN_MODULES} -DskipTests -DaltReleaseDeploymentRepository=talend_nexus_deployment::ossrh::https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/
+                            mvn deploy -s ${MAVEN_SETTINGS} -B -pl ${MVN_MODULES} -DskipTests -DaltReleaseDeploymentRepository=talend_nexus_deployment::default::https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/
                             """
                         }
                     }
