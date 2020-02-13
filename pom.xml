@@ -50,6 +50,10 @@
         <tag>HEAD</tag>
     </scm>
 
+    <distributionManagement>
+        <!-- empty to override configuration from ancestors -->
+    </distributionManagement>
+
     <developers>
         <developer>
             <name>Alin Dreghiciu</name>
