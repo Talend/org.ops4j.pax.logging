@@ -316,13 +316,6 @@
                         </execution>
                     </executions>
                 </plugin>
-                <plugin>
-                    <groupId>org.sonatype.plugins</groupId>
-                    <artifactId>nexus-staging-maven-plugin</artifactId>
-                    <configuration>
-                        <skipStaging>true</skipStaging>
-                    </configuration>
-                </plugin>
 
                 <!-- Core plugins -->
 
@@ -521,6 +514,13 @@
             <plugin>
                 <groupId>io.paradoxical</groupId>
                 <artifactId>resolved-pom-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <configuration>
+                    <skipStaging>true</skipStaging>
+                </configuration>
             </plugin>
 
             <!-- Core plugins -->
