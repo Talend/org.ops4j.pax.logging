@@ -33,6 +33,7 @@
     <groupId>org.ops4j.pax.logging</groupId>
     <artifactId>pax-logging-log4j2</artifactId>
     <packaging>bundle</packaging>
+    <version>${revision}</version>
 
     <name>OPS4J Pax Logging - Log4Jv2 implementation</name>
 
@@ -41,6 +42,10 @@
         of PaxLoggingService interface and Log4J2 specific configuration methods.
         Users may customize Log4J2 behaviour (appenders, layouts) by creating fragment attached to this bundle.
     </description>
+
+    <properties>
+        <revision>${pax-logging-log4j2.tesb.version}</revision>
+    </properties>
 
     <build>
         <plugins>
