@@ -57,7 +57,7 @@
                     </includes>
                     <systemPropertyVariables>
                         <version.jackson>${version.com.fasterxml.jackson}</version.jackson>
-                        <version.pax-logging>${project.version}</version.pax-logging>
+                        <version.pax-logging>${upstream.version}</version.pax-logging>
                     </systemPropertyVariables>
                     <redirectTestOutputToFile>true</redirectTestOutputToFile>
                     <runOrder>alphabetical</runOrder>
