@@ -204,7 +204,7 @@
 
     <properties>
 		<upstream.version>1.11.7</upstream.version>
-        <pax-logging-log4j2.tesb.version>1.11.2.tesb1</pax-logging-log4j2.tesb.version>
+        <pax-logging-log4j2.tesb.version>1.11.7.tesb1</pax-logging-log4j2.tesb.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -509,6 +509,14 @@
 		    <plugin>
                 <groupId>io.paradoxical</groupId>
                 <artifactId>resolved-pom-maven-plugin</artifactId>
+            </plugin>
+			<plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+				<extensions>false</extensions>
+                <configuration>
+                    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+                </configuration>
             </plugin>
 
             <!-- Core plugins -->
